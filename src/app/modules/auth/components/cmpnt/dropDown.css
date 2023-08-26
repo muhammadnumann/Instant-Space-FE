@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+
+button[id="dropdown"] {
+  background-color: white;
+  background-image: url("../../../../../../public/images/icons/dropdown.svg");
+  background-position: 10px 17px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  font-size: 18px;
+}
+

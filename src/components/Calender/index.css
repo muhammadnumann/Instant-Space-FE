@@ -1,0 +1,204 @@
+.fc {
+  /* the calendar root */
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.fc-header-toolbar {
+  background-color: transparent !important;
+}
+.fc-header-toolbar::before {
+  content: 'Calender';
+  font-family: SF Pro Display;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+.fc-theme-standard {
+  border-radius: 6px !important;
+}
+.fc-view-harness {
+  background-color: white !important;
+  border-radius: 6px !important;
+}
+.fc .fc-toolbar.fc-header-toolbar {
+  margin-bottom: 9px !important;
+}
+.fc .fc-daygrid-day-top {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center !important;
+  margin-top: 10px !important;
+}
+.fc-daygrid-day {
+  height: 6rem !important;
+  width: 4.4rem !important;
+}
+@media screen and (max-width: 540px){
+  .fc-daygrid-day {
+    height: 6rem !important;
+    width: 4.1rem !important;
+  }
+  }
+tr .fc-day-other:hover div div a:not(:hover) {
+    background-color:  #f4f4f4 !important;
+    color: #7d8695 !important;
+    font-family: SF Pro Display;
+    font-size: 28px !important;
+    font-weight: 600 !important;
+}
+tr .fc-day-other:hover {
+    background-color: #f4f4f4 !important;
+    color: #7d8695 !important;
+}
+.fc-daygrid-day:hover div div a:not(:hover) {
+    background-color: #0064fa !important;
+    color: white !important;
+    font-family: SF Pro Display;
+    font-size: 28px !important;
+    font-weight: 600 !important;
+}
+.fc-daygrid-day:hover {
+    background-color: #0064fa !important;
+    color: white !important;
+}
+.fc-media-screen:nth-child(1) {
+  height: 35.5rem !important;
+}
+.fc-scroller-harness > .fc-scroller {
+  overflow: hidden !important;
+  scroll-behavior: none !important;
+}
+.fc-theme-standard th {
+  border-bottom: none !important;
+  border-right: none !important;
+  border-left: none !important;
+}
+.fc-theme-standard td {
+  border: 1px solid #e7e6e9 !important;
+}
+.fc-today-button {
+  display: none !important;
+}
+.fc .fc-toolbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between !important;
+}
+#fc-dom-1 {
+  margin-left: 2.5rem;
+  font-family: SF Pro Display;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #7d8695;
+}
+.fc .fc-button {
+  padding: 0.25rem 0.25rem !important;
+  box-shadow: none !important;
+  border: 0 !important;
+  border-radius: 0.475rem;
+  vertical-align: middle;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.fc-next-button {
+  margin-left: 10px !important;
+}
+.fc-button-primary {
+  border: 2px solid #7d8695 !important;
+  border-radius: 6px !important;
+}
+.fc .fc-button-group .fc-button {
+  margin-left: 5px !important;
+}
+.fc-icon {
+  height: 1.1em !important;
+  border: 2px solid #7d8695;
+  border-radius: 6px;
+  padding-bottom: 6px !important;
+}
+.fc-event {
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+  background: rgba(0, 100, 250, 0.4) !important;
+  color: white !important;
+  border: none !important;
+}
+.fc-daygrid-day-events {
+  margin-top: 10px !important;
+}
+.fc-event-main {
+  font-family: SF Pro Display !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  text-align: center;
+}
+.fc-daygrid-day-number {
+  font-family: SF Pro Display;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+.fc .fc-col-header-cell .fc-col-header-cell-cushion {
+  font-family: SF Pro Display;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.fc .fc-day-other div div a {
+  background-color: #f4f4f4 !important;
+  color: #7d8695 !important;
+}
+.fc-toolbar-chunk:nth-child(2){
+    display: none !important;
+}
+.fc .fc-day-other {
+    background-color: #f4f4f4 !important;
+  } 
+.fc-daygrid-event-harness {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+.fc-day-sat div div a,
+.fc-day-sun div div a {
+  color: #0064fa !important ;
+}
+.fc-day-other div div a {
+  color: #aaaaaa !important;
+}
+.fc-next-button .fc-icon {
+  border: 2px solid #0064fa !important;
+  position: relative;
+}
+.fc-icon-chevron-right:before {
+  content: '\e901';
+  color: #0064fa !important;
+  position: absolute;
+  left: -1px;
+}
+.fc-prev-button .fc-icon {
+  position: relative;
+}
+.fc-icon-chevron-left:before {
+  content: '\e900';
+  position: absolute;
+  left: -1px;
+}
+@media screen and (max-width: 767.98px){
+.fc .fc-header-toolbar {
+    flex-direction: row;
+    align-items: flex-start;
+}
+}
+
+.fc-theme-standard .fc-scrollgrid {
+    border: 1px solid #E7E6E9 !important; 
+}
